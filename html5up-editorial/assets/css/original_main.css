@@ -2271,30 +2271,3 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
-
-/* Increasing text color contrast */
-body, input, select, textarea {
-  color: #50595f; /* Darker gray for better readability */
-}
-
-a {
-  color: #cc0000; /* Darker red for better visibility */
-}
-
-/* Enhancing focus and hover states for links */
-a:hover, a:focus {
-  color: #990000; /* Even darker red on hover/focus */
-  border-bottom-color: #990000;
-}
-
-/* Background for text over images */
-.image-text-overlay {
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-  padding: 10px; /* Padding around text */
-  border-radius: 5px; /* Optional rounded corners */
-}
-
-/* Text shadow for light backgrounds */
-.text-shadow {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Black shadow for better legibility */
-}
