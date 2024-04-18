@@ -91,7 +91,7 @@ body {
 
 /* Type */
 body, input, select, textarea {
-  color: #7f888f;
+  color: black;
   font-family: "Open Sans", sans-serif;
   font-size: 13pt;
   font-weight: 400;
@@ -121,7 +121,7 @@ a {
       color: inherit; }
 
 strong, b {
-  color: #3d4449;
+  color: black;
   font-weight: 600; }
 
 em, i {
@@ -131,7 +131,7 @@ p {
   margin: 0 0 2em 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #3d4449;
+  color: black;
   font-family: "Roboto Slab", serif;
   font-weight: 700;
   line-height: 1.5;
@@ -1011,7 +1011,7 @@ form {
   margin: 0 0 2em 0; }
 
 label {
-  color: #3d4449;
+  color: black;
   display: block;
   font-size: 0.9em;
   font-weight: 600;
@@ -1102,7 +1102,7 @@ input[type="radio"] {
   input[type="checkbox"] + label,
   input[type="radio"] + label {
     text-decoration: none;
-    color: #7f888f;
+    color: black;
     cursor: pointer;
     display: inline-block;
     font-size: 1em;
@@ -1899,7 +1899,7 @@ button,
     -webkit-transform: scaleX(-1);
     -ms-transform: scaleX(-1);
     transform: scaleX(-1);
-    color: #7f888f;
+    color: black;
     content: '\f002';
     cursor: default;
     display: block;
@@ -2187,7 +2187,7 @@ button,
 
 /* Footer */
 #footer .copyright {
-  color: #9fa3a6;
+  color: black;
   font-size: 0.9em; }
   #footer .copyright a {
     color: inherit; }
@@ -2198,7 +2198,7 @@ button,
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #3d4449;
+  color: black;
   font-family: "Roboto Slab", serif;
   font-weight: 400;
   letter-spacing: 0.075em;
@@ -2239,7 +2239,7 @@ button,
         -webkit-transition: color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
         -ms-transition: color 0.2s ease-in-out, -ms-transform 0.2s ease-in-out;
         transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
-        color: #9fa3a6;
+        color: black;
         content: '\f078';
         position: absolute;
         right: 0; }
@@ -2258,7 +2258,7 @@ button,
   margin: 0.5em 0 0 0;
   padding: 0.5em 0 0 0; }
   #menu > ul > li > ul {
-    color: #9fa3a6;
+    color: black;
     display: none;
     margin: 0.5em 0 1.5em 0;
     padding-left: 1em; }
