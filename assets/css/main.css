@@ -2082,3 +2082,23 @@ body {
 .no-justify {
   text-align: left;
 }
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the images horizontally */
+  align-items: center; /* Center the images vertically */
+  gap: 10px; /* Adjust the gap between the images as needed */
+}
+
+.image-box {
+  width: calc(25% - 10px); /* Adjust the width as needed, subtracting the gap */
+  margin-bottom: 10px; /* Space at the bottom of each image */
+}
+
+.image-box img {
+  width: 100%; /* Make the image fill the container */
+  height: auto; /* Keep the image aspect ratio */
+  border: 1px solid #ccc; /* Optional border */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Optional shadow */
+}
