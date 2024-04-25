@@ -2100,5 +2100,46 @@ body {
   width: 100%; /* Make the image fill the container */
   height: auto; /* Keep the image aspect ratio */
   border: 1px solid #ccc; /* Optional border */
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Optional shadow */
+  box-shadow: 2px 2px 5px rgba(210, 199, 199, 0.2); /* Optional shadow */
+}
+
+.content-container2 {
+  display: flex;
+  flex-direction: row; /* Side-by-side alignment */
+  align-items: stretch; /* Stretch items vertically to fill the container */
+  justify-content: space-between; /* Spaces items apart */
+  margin-bottom: 10px; /* Adds space between blocks */
+}
+
+.text-box2 {
+  flex: 1 1 60%; /* Takes up 65% of the space */
+  padding-right: 20px; /* Space between text and image */
+}
+
+.image-box2 {
+  flex: 1 1 40%; /* Takes up 35% of the space */
+  display: flex;
+  justify-content: center; /* Centers the image horizontally in the box */
+  align-items: center; /* Centers the image vertically in the box */
+  height: 370px; /* Ensures the container fills the height to match text box */
+}
+
+.image-box2 img {
+  max-width: 100%; /* Makes the image responsive within its container */
+  max-height: 100%; /* Ensures image does not exceed container height */
+  height: auto; /* Maintains aspect ratio */
+  border: 1px solid #ccc; /* Optional border style */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Optional shadow for styling */
+}
+
+.image-box3 {
+  width: calc(45% - 10px); /* Adjust the width as needed, subtracting the gap */
+  margin-bottom: 10px; /* Space at the bottom of each image */
+}
+
+.image-box3 img {
+  width: 100%; /* Make the image fill the container */
+  height: auto; /* Keep the image aspect ratio */
+  border: 1px solid #ccc; /* Optional border */
+  box-shadow: 2px 2px 5px rgba(210, 199, 199, 0.2); /* Optional shadow */
 }
