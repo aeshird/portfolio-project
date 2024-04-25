@@ -2133,7 +2133,7 @@ body {
 }
 
 .image-box3 {
-  width: calc(45% - 10px); /* Adjust the width as needed, subtracting the gap */
+  width: calc(40% - 10px); /* Adjust the width as needed, subtracting the gap */
   margin-bottom: 10px; /* Space at the bottom of each image */
 }
 
