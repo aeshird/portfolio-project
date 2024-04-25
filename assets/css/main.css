@@ -2128,8 +2128,8 @@ body {
   max-width: 100%; /* Makes the image responsive within its container */
   max-height: 100%; /* Ensures image does not exceed container height */
   height: auto; /* Maintains aspect ratio */
-  border: 1px solid #ccc; /* Optional border style */
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Optional shadow for styling */
+  border: 1px solid #ccc; /* Optional border */
+  box-shadow: 2px 2px 5px rgba(210, 199, 199, 0.2); /* Optional shadow */
 }
 
 .image-box3 {
@@ -2140,6 +2140,35 @@ body {
 .image-box3 img {
   width: 100%; /* Make the image fill the container */
   height: auto; /* Keep the image aspect ratio */
+  border: 1px solid #ccc; /* Optional border */
+  box-shadow: 2px 2px 5px rgba(210, 199, 199, 0.2); /* Optional shadow */
+}
+
+.content-container3 {
+  display: flex;
+  flex-direction: row; /* Side-by-side alignment */
+  align-items: stretch; /* Stretch items vertically to fill the container */
+  justify-content: space-between; /* Spaces items apart */
+  margin-bottom: 10px; /* Adds space between blocks */
+}
+
+.text-box3 {
+  flex: 1 1 63%; /* Takes up 65% of the space */
+  padding-right: 20px; /* Space between text and image */
+}
+
+.image-box4 {
+  flex: 1 1 37%; /* Takes up 35% of the space */
+  display: flex;
+  justify-content: center; /* Centers the image horizontally in the box */
+  align-items: center; /* Centers the image vertically in the box */
+  height: 220px; /* Ensures the container fills the height to match text box */
+}
+
+.image-box4 img {
+  max-width: 100%; /* Makes the image responsive within its container */
+  max-height: 100%; /* Ensures image does not exceed container height */
+  height: auto; /* Maintains aspect ratio */
   border: 1px solid #ccc; /* Optional border */
   box-shadow: 2px 2px 5px rgba(210, 199, 199, 0.2); /* Optional shadow */
 }
