@@ -2072,29 +2072,44 @@ body {
   flex-direction: row; /* Side-by-side alignment */
   align-items: stretch; /* Stretch items vertically to fill the container */
   justify-content: space-between; /* Spaces items apart */
-  margin-bottom: 10px; /* Adds space between blocks */
+  margin-bottom: 5px; /* Adds space between blocks */
 } 
 
 .text-box-main {
-  flex: 1 1 60%; /* Takes up 65% of the space */
+  flex: 1 1 60%; /* Takes up 60% of the space */
   padding-right: 20px; /* Space between text and image */
 }
 
 .image-main {
-  flex: 1 1 40%; /* Takes up 35% of the space */
+  flex: 1 1 40%; /* Takes up 40% of the space */
   display: flex;
   justify-content: center; /* Centers the image horizontally in the box */
-  align-items: flex-start; /* Centers the image vertically in the box */
-  height: auto; /* Ensures the container fills the height to match text box */
-  margin-top: 5px; /* Moves the image down by 10 pixels from start */
-  margin-bottom: -5px; /* Moves the image up by 10 pixels from start */
+  align-items: center; /* Aligns the image to the top of the box */
 }
 
 .image-main img {
   max-width: 100%; /* Makes the image responsive within its container */
-  max-height: 100%; /* Ensures image does not exceed container height */
-  height: 475px; /* Maintains aspect ratio */
+  height: auto; /* Adjusts height automatically to maintain aspect ratio */
   border: 1px solid #ccc; /* Optional border */
+  border-radius: 5px;
   box-shadow: 2px 2px 5px rgba(210, 199, 199, 0.2); /* Optional shadow */
   display: block; /* Ensures img element doesn't have extra space below it */
+}
+
+@media (max-width: 768px) {
+  .content-main {
+      flex-direction: column;
+  }
+
+  .text-box-main, .image-main {
+      flex: 1 0 auto; /* Adjust flex settings for mobile */
+      padding-right: 0; /* Remove padding between text and image */
+  }
+}
+
+@media (max-width: 768px) {
+  .text-box-main p {
+      font-size: 16px; /* Adjust font size for smaller screens */
+      line-height: 1.6; /* Improve readability */
+  }
 }
