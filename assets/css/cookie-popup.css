@@ -1,0 +1,42 @@
+/* Cookie popup styles */
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
+#cookie-popup {
+  font-family: "Source Code Pro", monospace;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.25rem;
+  max-width: 100%;
+  height: auto;
+  z-index: 9999;
+}
+
+#cookie-popup a {
+  color: #fff;
+}
+
+#cookie-popup a:hover {
+  color: lightpink;
+  text-decoration: underline;
+}
+
+#accept-cookies {
+  font-family: "Source Code Pro", monospace;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+#accept-cookies:hover {
+  background-color: lightpink;
+  transition: 0.4s;
+}
