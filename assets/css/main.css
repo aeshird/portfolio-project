@@ -2076,20 +2076,20 @@ body {
 } 
 
 .text-box-main {
-  flex: 1 1 60%; /* Takes up 60% of the space */
-  padding-right: 20px; /* Space between text and image */
+  flex: 1 1 55%; /* Takes up 60% of the space */
+  padding-right: 25px; /* Space between text and image */
 }
 
 .image-main {
-  flex: 1 1 40%; /* Takes up 40% of the space */
+  flex: 1 1 45%; /* Takes up 40% of the space */
   display: flex;
   justify-content: center; /* Centers the image horizontally in the box */
   align-items: center; /* Aligns the image to the top of the box */
 }
 
 .image-main img {
-  max-width: 75%; /* Reduces the max width of the image */
-  max-height: 500px; /* Sets a maximum height for the image */
+  max-width: 85%; /* Reduces the max width of the image */
+  max-height: 600px; /* Sets a maximum height for the image */
   height: auto; /* Adjusts height automatically to maintain aspect ratio */
   border: 1px solid #ccc; /* Optional border */
   border-radius: 5px;
