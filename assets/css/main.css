@@ -2088,7 +2088,8 @@ body {
 }
 
 .image-main img {
-  max-width: 100%; /* Makes the image responsive within its container */
+  max-width: 75%; /* Reduces the max width of the image */
+  max-height: 500px; /* Sets a maximum height for the image */
   height: auto; /* Adjusts height automatically to maintain aspect ratio */
   border: 1px solid #ccc; /* Optional border */
   border-radius: 5px;
