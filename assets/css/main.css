@@ -2114,3 +2114,32 @@ body {
       line-height: 1.6; /* Improve readability */
   }
 }
+
+.content-container5 {
+  display: flex;
+  flex-direction: row; /* Side-by-side alignment */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Spaces items apart */
+  margin-bottom: 10px; /* Adds space between blocks */
+}
+
+.text-box5 {
+  flex: 1 1 60%; /* Takes up 60% of the space */
+  padding-right: 20px; /* Space between text and image */
+}
+
+.image-box5 {
+  flex: 1 1 40%; /* Takes up 40% of the space */
+  display: flex;
+  justify-content: center; /* Centers the image horizontally in the box */
+  align-items: center; /* Centers the image vertically in the box */
+  height: 100%; /* Ensures the container fills the height to match text box */
+}
+
+.image-box5 img {
+  max-width: 100%; /* Makes the image responsive within its container */
+  max-height: 100%; /* Ensures image does not exceed container height */
+  height: auto; /* Maintains aspect ratio */
+  border: 1px solid #ccc; /* Optional border */
+  box-shadow: 2px 2px 5px rgba(210, 199, 199, 0.2); /* Optional shadow */
+}
