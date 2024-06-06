@@ -2056,7 +2056,7 @@ body {
   display: flex;
   justify-content: center; /* Centers the image horizontally in the box */
   align-items: center; /* Centers the image vertically in the box */
-  height: 220px; /* Ensures the container fills the height to match text box */
+  height: 200px; /* Ensures the container fills the height to match text box */
 }
 
 .image-box4 img {
@@ -2125,7 +2125,7 @@ body {
 
 .text-box5 {
   flex: 1 1 60%; /* Takes up 60% of the space */
-  padding-right: 20px; /* Space between text and image */
+  padding-right: 25px; /* Space between text and image */
 }
 
 .image-box5 {
