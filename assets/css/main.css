@@ -2192,16 +2192,27 @@ body {
     height: auto;
   }
 
-  /* Sidebar full width for mobile */
+  /* Sidebar full width for mobile, but hidden by default */
   #sidebar {
     width: 100%;
     position: relative;
-    margin-left: 0;
-    padding: 1em;
+    margin-left: -100%; /* Hide the sidebar by default */
+    transition: margin-left 0.3s ease; /* Smooth transition for showing/hiding */
   }
 
   #sidebar.inactive {
-    margin-left: 0;
+    margin-left: -100%; /* Keep it hidden when inactive */
+  }
+
+  #sidebar.active {
+    margin-left: 0; /* Show the sidebar when active */
+  }
+
+  /* Sidebar toggle button stays visible */
+  #sidebar .toggle {
+    left: 0; /* Keep the toggle button visible even when sidebar is hidden */
+    position: fixed; /* Keep it fixed so the user can toggle the sidebar */
+    top: 1em;
   }
 
   /* Pagination adjustments */
