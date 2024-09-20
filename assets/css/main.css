@@ -2144,117 +2144,109 @@ body {
   box-shadow: 2px 2px 5px rgba(210, 199, 199, 0.2); /* Optional shadow */
 }
 
-/* For screens with a width of 768px or less (tablets, mobile devices) */
+/* General styles for mobile devices with a width of 768px or less */
 @media (max-width: 768px) {
-  /* Adjust text size for better readability on mobile */
+  /* Reduce font size slightly for better fit on smaller screens */
   body, input, select, textarea {
-    font-size: 12px;
-    line-height: 1.5;
+    font-size: 14px;
+    line-height: 1.6;
   }
 
-  /* Stack content containers vertically */
+  /* Make the content containers stack vertically */
   .content-container2, .content-container3, .content-main, .content-container5 {
     flex-direction: column;
   }
 
-  /* Adjust image and text box widths to 100% on mobile */
+  /* Set both text and image containers to full width */
   .text-box2, .image-box2, .text-box3, .image-box4, .text-box-main, .image-main, .text-box5, .image-box5 {
     width: 100%;
-    padding-right: 0;
-    margin-bottom: 10px;
+    padding: 0;
+    margin-bottom: 15px;
   }
 
-  /* Adjust image max height to fit better on mobile */
+  /* Ensure images don't take up too much space */
   .image-box2 img, .image-box4 img, .image-box5 img, .image-main img {
-    max-height: 300px; /* Adjust for better mobile experience */
-    width: 100%; /* Full width on smaller screens */
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
   }
 
-  /* Center header content on smaller screens */
-  #header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* Adjust padding inside the main content for mobile */
+  /* Adjust padding and margins for better layout on mobile */
   #main > .inner {
-    padding: 0 1em;
+    padding: 0 1.5em;
   }
 
-  /* Adjust font sizes for headings */
-  h1 {
-    font-size: 2em;
-    line-height: 1.2;
+  /* Header and banner tweaks */
+  #header {
+    padding-top: 1em;
   }
 
-  h2 {
-    font-size: 1.5em;
-  }
-
-  /* Adjust banner layout for mobile */
   #banner {
+    padding: 2em 0;
     flex-direction: column;
-    padding: 3em 0;
   }
 
+  /* Ensure the image fits the screen */
   #banner .image {
-    margin: 1em 0;
-    height: 200px;
+    width: 100%;
+    margin: 0;
+    height: auto;
   }
 
-  /* Sidebar adjustments */
+  /* Sidebar full width for mobile */
   #sidebar {
     width: 100%;
     position: relative;
     margin-left: 0;
+    padding: 1em;
   }
 
   #sidebar.inactive {
     margin-left: 0;
   }
 
-  /* Image gallery adjustments */
-  .image-gallery {
-    justify-content: space-around; /* Centers images better on mobile */
-  }
-
-  .image-box {
-    width: 45%; /* Reduce image size for better fit on mobile */
-  }
-
-  /* Adjust action buttons to stack vertically on mobile */
-  ul.actions.stacked li {
-    padding: 1em 0;
+  /* Pagination adjustments */
+  ul.pagination li {
+    display: inline-block;
+    padding: 0.5em;
   }
 }
 
-/* For screens with a width of 480px or less (smaller mobile devices) */
+/* Specific styles for screens 480px or smaller */
 @media (max-width: 480px) {
-  /* Further reduce text size and padding for better fit on small screens */
+  /* Further reduce font size for smaller devices */
   body, input, select, textarea {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.4;
   }
 
-  /* Stack sidebar items vertically */
+  /* Adjust heading sizes */
+  h1 {
+    font-size: 1.8em;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  /* Further adjust banner layout */
+  #banner {
+    padding: 1.5em 0;
+  }
+
+  /* Reduce image sizes in the banner */
+  #banner .image {
+    height: auto;
+    margin: 0;
+  }
+
+  /* Make gallery images smaller for better fit */
+  .image-box {
+    width: 100%; /* Full width on mobile */
+  }
+
+  /* Ensure the sidebar toggle and content fit the screen */
   #sidebar {
-    width: 100%;
-    padding: 1em;
-  }
-
-  /* Reduce image sizes for small screens */
-  .image-box2 img, .image-box4 img, .image-box5 img, .image-main img {
-    max-height: 200px;
-  }
-
-  /* Adjust icon size in features for smaller devices */
-  .features article .icon {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-  }
-
-  .features article .icon:before {
-    font-size: 1rem;
+    padding: 0.5em;
   }
 }
