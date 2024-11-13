@@ -2160,10 +2160,6 @@ body {
       padding: 1em;
   }
 
-  #sidebar {
-      display: none; /* Hide sidebar or collapse into a menu */
-  }
-
   /* Menu - Make it a dropdown or hamburger style */
   nav#menu ul {
       display: none;
@@ -2204,32 +2200,5 @@ body {
   /* Adjust footer text size */
   footer p {
       font-size: 0.9em;
-  }
-}
-
-/* Sidebar Visibility on Mobile */
-@media screen and (max-width: 768px) {
-  #sidebar {
-      display: block; /* Ensures sidebar can appear */
-      position: fixed;
-      width: 100%;
-      z-index: 1000;
-      left: 0;
-      top: 0;
-      transform: translateX(-100%);
-      transition: transform 0.3s ease;
-  }
-  #sidebar.active {
-      transform: translateX(0); /* Slide in on mobile */
-  }
-
-  #menu {
-      display: block;
-  }
-  nav#menu ul {
-      display: block;
-      background-color: white;
-      width: 100%;
-      padding: 10px;
   }
 }
