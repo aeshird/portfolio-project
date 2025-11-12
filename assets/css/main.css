@@ -2143,3 +2143,7 @@ body {
   border: 1px solid #ccc; /* Optional border */
   box-shadow: 2px 2px 5px rgba(210, 199, 199, 0.2); /* Optional shadow */
 }
+
+@media (max-width:1280px){
+  body.is-preload #sidebar{ display:block; }
+}
