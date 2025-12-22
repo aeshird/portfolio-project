@@ -2147,3 +2147,10 @@ body {
 @media (max-width:1280px){
   body.is-preload #sidebar{ display:block; }
 }
+
+/* Hide the dropdown arrow in "Projects", keep click-to-open behavior */
+#menu ul a.opener:before,
+#menu ul span.opener:before {
+  display: none !important;
+  content: none !important;
+}
